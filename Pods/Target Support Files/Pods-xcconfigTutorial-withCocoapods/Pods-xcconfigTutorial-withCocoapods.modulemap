@@ -1,0 +1,6 @@
+framework module Pods_xcconfigTutorial_withCocoapods {
+  umbrella header "Pods-xcconfigTutorial-withCocoapods-umbrella.h"
+
+  export *
+  module * { export * }
+}
