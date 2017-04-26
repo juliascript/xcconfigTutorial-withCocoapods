@@ -26,6 +26,9 @@
 		A30862691EB029F600B68E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A308626C1EB029F600B68E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A308626E1EB029F600B68E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30862751EB02BD500B68E84 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A30862761EB02BDF00B68E84 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		A30862771EB02BE700B68E84 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 		A30862611EB029F600B68E84 /* xcconfigTutorial-withCocoapods */ = {
 			isa = PBXGroup;
 			children = (
+				A30862741EB02BC300B68E84 /* Config */,
 				A30862621EB029F600B68E84 /* AppDelegate.swift */,
 				A30862641EB029F600B68E84 /* ViewController.swift */,
 				A30862661EB029F600B68E84 /* Main.storyboard */,
@@ -86,6 +90,16 @@
 				A308626E1EB029F600B68E84 /* Info.plist */,
 			);
 			path = "xcconfigTutorial-withCocoapods";
+			sourceTree = "<group>";
+		};
+		A30862741EB02BC300B68E84 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A30862751EB02BD500B68E84 /* Debug.xcconfig */,
+				A30862761EB02BDF00B68E84 /* Development.xcconfig */,
+				A30862771EB02BE700B68E84 /* Release.xcconfig */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,7 @@
 /* Begin XCBuildConfiguration section */
 		A308626F1EB029F600B68E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30862751EB02BD500B68E84 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -292,6 +307,7 @@
 		};
 		A30862701EB029F600B68E84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30862771EB02BE700B68E84 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -336,7 +352,7 @@
 		};
 		A30862721EB029F600B68E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A44EAF4E438C56A9BA1FF1A /* Pods-xcconfigTutorial-withCocoapods.debug.xcconfig */;
+			baseConfigurationReference = A30862751EB02BD500B68E84 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 373244HPF5;
@@ -350,7 +366,7 @@
 		};
 		A30862731EB029F600B68E84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30AAAE03B5F0A290801A5C4D /* Pods-xcconfigTutorial-withCocoapods.release.xcconfig */;
+			baseConfigurationReference = A30862771EB02BE700B68E84 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 373244HPF5;
@@ -362,6 +378,72 @@
 			};
 			name = Release;
 		};
+		A30862781EB02C2300B68E84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30862761EB02BDF00B68E84 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		A30862791EB02C2300B68E84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30862761EB02BDF00B68E84 /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 373244HPF5;
+				INFOPLIST_FILE = "xcconfigTutorial-withCocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juliageist.xcconfigTutorial-withCocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Development;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,6 +451,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A308626F1EB029F600B68E84 /* Debug */,
+				A30862781EB02C2300B68E84 /* Development */,
 				A30862701EB029F600B68E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -378,9 +461,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A30862721EB029F600B68E84 /* Debug */,
+				A30862791EB02C2300B68E84 /* Development */,
 				A30862731EB029F600B68E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

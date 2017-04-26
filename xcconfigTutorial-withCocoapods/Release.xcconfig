@@ -1,0 +1,11 @@
+//
+//  Release.xcconfig
+//  xcconfigTutorial-withCocoapods
+//
+//  Created by Julia Geist on 4/25/17.
+//  Copyright © 2017 Julia Geist. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-xcconfigTutorial-withCocoapods/Pods-xcconfigTutorial-withCocoapods.release.xcconfig"
+
+SAMPLE_API_KEY=l8owe83release2923
